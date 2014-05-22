@@ -1,0 +1,9 @@
+$('#fin').empty();
+$('#now').empty();
+
+$('#now').append("<%= @time %>");
+
+$('#hours').replaceWith("<span id='hours'><%= @hours %></span>")
+$('#minutes').replaceWith("<span id='minutes'><%= @minutes %></span>")
+$('#seconds').replaceWith("<span id='seconds'><%= @seconds %></span>")
+$('#finished').html("not done");

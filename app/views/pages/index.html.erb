@@ -1,0 +1,13 @@
+
+<%= form_tag :time, url: time_path, method: :post, remote: true do %>
+  <%= label_tag(:time) %>
+  <%= text_field_tag(:time) %>
+  <%= submit_tag("Count down!") %>
+<% end %> 
+
+
+<div id= "clock">
+  <p><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">03</span><span id="finished">done</span></p>
+</div>
+
+<div id="now"></div>
